@@ -1,0 +1,13 @@
+name: crit
+version: 0.1.0
+
+authors:
+  - Owajigbanam Ogbuluijah <xigbanam@gmail.com>
+
+targets:
+  crit:
+    main: src/crit.cr
+
+crystal: 0.34.0
+
+license: MIT
