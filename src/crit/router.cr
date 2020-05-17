@@ -2,7 +2,6 @@ require "./exceptions"
 require "./commands"
 
 module Crit
-
   class Router
     @intent = uninitialized String
     @args = [] of String

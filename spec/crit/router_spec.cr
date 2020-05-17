@@ -50,7 +50,7 @@ describe Crit::Router do
 
   describe "route" do
     it "routes 'init' to the InitCommand" do
-      router = Crit::Router.new ["init", "here"]
+      router = Crit::Router.new ["init"]
 
       command = router.route
 
