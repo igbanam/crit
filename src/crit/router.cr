@@ -27,6 +27,8 @@ module Crit
         Crit::InitCommand.new(@args)
       when "add"
         Crit::AddCommand.new(@args)
+      when "commit"
+        Crit::CommitCommand.new(@args)
       else
         reject!
       end

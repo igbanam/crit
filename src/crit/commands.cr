@@ -86,4 +86,27 @@ module Crit
       end
     end
   end
+
+  class CommitCommand < Command
+    COMMIT_MESSAGE_TEMPLATE = "
+    # Title
+    #
+    # Body
+    "
+
+    def initialize(args : Array(String))
+      raise IllegalCommand.new unless args.empty?
+    end
+
+    def execute
+      if stage_clear?
+        puts "Nothing to commit."
+        return
+      end
+    end
+
+    private def stage_clear?
+      !File.exists?(INDEX_PATH) || File.empty?(INDEX_PATH)
+    end
+  end
 end

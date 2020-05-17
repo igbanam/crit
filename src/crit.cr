@@ -5,7 +5,7 @@ require "./crit/exceptions"
 # Makeshift Git
 module Crit
   VERSION = "0.1.0"
-  SUPPORTED_COMMANDS = ["init", "add"]
+  SUPPORTED_COMMANDS = ["init", "add", "commit"]
 
   OptionParser.parse do |parser|
     parser.banner = "Usage: crit <command> [<args>]"

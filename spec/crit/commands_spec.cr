@@ -15,3 +15,13 @@ describe Crit::AddCommand do
     end
   end
 end
+
+describe Crit::CommitCommand do
+  describe "initialize" do
+    it "takes no arguments" do
+      expect_raises(Crit::IllegalCommand) do
+        Crit::CommitCommand.new(["something"])
+      end
+    end
+  end
+end
