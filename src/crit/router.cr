@@ -25,6 +25,8 @@ module Crit
       case @intent
       when "init"
         Crit::InitCommand.new(@args)
+      when "add"
+        Crit::AddCommand.new(@args)
       else
         reject!
       end
