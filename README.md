@@ -1,5 +1,7 @@
 # crit
 
+[![GitHub release](https://img.shields.io/github/release/igbanam/crit.svg)](https://github.com/igbanam/crit/releases)
+
 A [makeshift Git](https://thoughtbot.com/blog/rebuilding-git-in-ruby)
 
 ## Installation
