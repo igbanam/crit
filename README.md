@@ -1,18 +1,27 @@
 # crit
 
-TODO: Write a description here
+A [makeshift Git](https://thoughtbot.com/blog/rebuilding-git-in-ruby)
 
 ## Installation
 
-TODO: Write installation instructions here
+- Clone the repository
+- `shards build`
 
 ## Usage
 
-TODO: Write usage instructions here
+This is a proof of concept and shouldn't be used in any production setting.
+Building this toool was a learning process into CLI apps with Crystal.
+
+To use this,
+
+- `./bin/crit init` initializes the crit repository
+- `./bin/crit add` stages a change
+- `./bin/crit commit` records this change
 
 ## Development
 
-TODO: Write development instructions here
+This depends on having Vim installed. Since it's not meant to be too robust a
+solution, Vim is hardcoded as the default editor.
 
 ## Contributing
 
